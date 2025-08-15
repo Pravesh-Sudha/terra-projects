@@ -1,3 +1,4 @@
 */.terraform*
 */.vscode
 */terraform.tfstate
+two-tier-app/terra-config/.terraform*
