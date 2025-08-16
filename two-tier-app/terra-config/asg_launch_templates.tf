@@ -20,7 +20,7 @@ resource "aws_autoscaling_group" "app-ag" {
   name                = "${var.project_name}-ag"
   max_size            = 2
   min_size            = 1
-  desired_capacity    = 1
+  desired_capacity    = 2
   vpc_zone_identifier = module.vpc.private_subnets
 
   launch_template {
