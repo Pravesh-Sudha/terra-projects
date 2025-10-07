@@ -82,7 +82,8 @@ The browser should display Pravesh Sudha's portfolio webpage with:
 - Achievements: Highlights like CI/CD guides, open-source contributions, and AWS certifications
 - Modern, tech-focused design with neon highlights and social links
 
-![Pravesh Sudha Portfolio Webpage](screenshots/pravesh-sudha-webpage.png) *(Add a screenshot here)*
+![Pravesh Sudha Portfolio Webpage]*
+![Web-server](result.png)
 
 ## 📚 Learning Goals
 
