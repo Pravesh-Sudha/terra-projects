@@ -10,7 +10,7 @@ async def main():
     await cognee.prune.prune_system(metadata=True)
 
     # Add sample content
-    text = "Pravesh Sudha is a DevOps Engineer, AWS Community Builder and Content Creator. He loves to try out new AI tool like Cognee AI, Portia AI and Runner-H. He shares his learning on his socials and detailed blogs on Hashnode, Dev.to and medium along with Detailed project tutorial on Youtube"
+    text = "Cognee turns documents into AI memory."
 
     await cognee.add(text)
 
@@ -27,13 +27,13 @@ async def main():
 
     # Search the knowledge graph
     graph_result = await cognee.search(
-        query_text="What does Pravesh Sudha do?", query_type=SearchType.GRAPH_COMPLETION
+        query_text="What does Cognee do?", query_type=SearchType.GRAPH_COMPLETION
     )
     print("Graph Result: ")
     print(graph_result)
 
     rag_result = await cognee.search(
-        query_text="What does Pravesh Sudha do?", query_type=SearchType.RAG_COMPLETION
+        query_text="What does Cognee do?", query_type=SearchType.RAG_COMPLETION
     )
     print("RAG Result: ")
     print(rag_result)
