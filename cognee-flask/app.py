@@ -5,7 +5,6 @@ import asyncio
 import os
 import pathlib
 import logging
-from asgiref.wsgi import WsgiToAsgi
 
 # Set up logging
 logging.basicConfig(level=logging.DEBUG)
@@ -84,7 +83,6 @@ async def process():
         logger.error(f"Error in process route: {str(e)}", exc_info=True)
         return jsonify({"error": f"An error occurred: {str(e)}"}), 500
     
-app = WsgiToAsgi(app)
 
 if __name__ == "__main__":
     logger.info("Starting Flask application")
