@@ -2,3 +2,9 @@
 */.vscode
 */terraform.tfstate
 two-tier-app/terra-config/.terraform*
+
+
+cognee-flask/__pycache__
+cognee-flask/.venv
+cognee-flask/.env
+cognee-flask/.DS_Store
