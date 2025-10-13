@@ -1,0 +1,18 @@
+[project]
+name = "cognee-starter"
+version = "0.1.1"
+description = "Starter project which can be harvested for parts"
+readme = "README.md"
+
+requires-python = ">=3.10, <=3.13"
+
+dependencies = [
+    "cognee>=0.1.38,<1.0.0",
+    "flask[async]>=3.0.3",
+    "asgiref>=3.8.1",
+    "kuzu>=0.11.3",
+    "gevent>=24.2.1",
+    "gunicorn>=23.0.0",
+    "google-generativeai>=0.8.5",
+    "uvicorn>=0.30.0",
+]

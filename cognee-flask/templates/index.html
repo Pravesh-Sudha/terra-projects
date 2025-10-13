@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognee AI Interface</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Cognee AI Knowledge Graph</h1>
+        <div class="card shadow-sm p-4">
+            <form id="cognee-form" action="/process" method="POST">
+                <div class="mb-3">
+                    <label for="text_content" class="form-label">Enter Content</label>
+                    <textarea class="form-control" id="text_content" name="text_content" rows="5" placeholder="Enter text content to process..." required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="query_text" class="form-label">Enter Query</label>
+                    <input type="text" class="form-control" id="query_text" name="query_text" placeholder="e.g., What is the document about?" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Process & Search</button>
+                </div>
+            </form>
+            <!-- Loading Spinner -->
+            <div id="loading" class="d-none text-center mt-4">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="mt-2">Wait... Cognee is working its magic!</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

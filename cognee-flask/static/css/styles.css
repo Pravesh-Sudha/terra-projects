@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.result-card {
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+}
+
+/* Form Elements */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Buttons */
+.btn-primary {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #0056b3, #003d80);
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background: linear-gradient(90deg, #28a745, #1e7e34);
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-success:hover {
+    background: linear-gradient(90deg, #1e7e34, #155724);
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: linear-gradient(90deg, #6c757d, #5a6268);
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(90deg, #5a6268, #4b5257);
+    transform: scale(1.05);
+}
+
+/* Result Display */
+.border {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    background: #f8f9fa;
+    padding: 15px;
+    transition: background 0.3s ease;
+}
+
+.border:hover {
+    background: #e9ecef;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.4em;
+}
+
+#loading p {
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 1.2rem;
+    animation: pulse 1.5s infinite;
+}
+
+/* Animation for Loading Text */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .card {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .btn {
+        padding: 10px 16px;
+    }
+}
