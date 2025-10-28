@@ -1,0 +1,20 @@
+---
+- name: Install Nginx
+  become: yes
+  ansible.builtin.apt:
+    name: nginx
+    state: present
+    update_cache: yes
+
+- name: Copy index.html
+  become: yes
+  ansible.builtin.copy:
+    src: index-{{ env }}.html   
+    dest: /var/www/html/index.html
+    mode: '0644'
+
+- name: Restart nginx
+  become: yes
+  ansible.builtin.service:
+    name: nginx
+    state: restarted
