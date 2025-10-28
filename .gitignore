@@ -1,10 +1,15 @@
+# General ignores
 */.terraform*
 */.vscode
 */terraform.tfstate
 two-tier-app/terra-config/.terraform*
 
-
+# Cognee Ignores
 cognee-flask/__pycache__
 cognee-flask/.venv
 cognee-flask/.env
 cognee-flask/.DS_Store
+
+# Terra-ansible Ignores
+terra-ansible-starter/terra-config/.terraform*
+terra-ansible-starter/terra-config/terraform*
