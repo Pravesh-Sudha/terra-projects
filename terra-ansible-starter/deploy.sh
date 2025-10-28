@@ -3,6 +3,7 @@ set -e  # exit on error
 
 echo "🚀 Running Terraform Apply..."
 cd terra-config
+terraform init
 terraform apply -auto-approve
 
 terraform output -json instance_public_ips > output.json
