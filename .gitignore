@@ -13,3 +13,8 @@ cognee-flask/.DS_Store
 # Terra-ansible Ignores
 terra-ansible-starter/terra-config/.terraform*
 terra-ansible-starter/terra-config/terraform*
+
+
+# Terraform Workspace Ignores
+terraform-workspace-s3/terraform*
+terraform-workspace-s3/.terraform*
