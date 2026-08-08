@@ -1,7 +1,7 @@
 # Key-Pair for Ansible
 resource "aws_key_pair" "tester_key" {
   key_name   = "tester-key"
-  public_key = file("~/.ssh/appKey.pub")
+  public_key = file(pathexpand("~/.ssh/appKey.pub"))
 }
 
 # Security Group for EC2
@@ -45,7 +45,7 @@ resource "aws_instance" "tester_1" {
   }
 
   ami           = data.aws_ami.ubuntu.id
-  instance_type = "t2.micro"
+  instance_type = "t3.micro"
   key_name    = aws_key_pair.tester_key.key_name
   vpc_security_group_ids = [aws_security_group.tester_sg.id]
 
