@@ -212,6 +212,3 @@ Run this separately inside the directory you deployed.
 ## Author
 
 **Pravesh Sudha**
-
-Terraform projects:  
-https://github.com/Pravesh-Sudha/terra-projects
